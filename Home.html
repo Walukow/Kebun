@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <link rel="stylesheet" href="sHome.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <div class="nav">
+        <table>
+            <tr>
+                <td>
+                    <a href="Home.html" class="navcon"><span class="kebun">Kebun</span><span class="ku">Ku</span></a>
+                </td>
+                <td>
+                    <div class="search-container">
+                        <form action="/search" method="get">
+                            <input type="text" placeholder="Cari barang" name="search">
+                            <button type="submit" class="cari">Cari</button>
+                        </form>
+                    </div>
+                </td>
+                <td>
+                    <!-- Pastikan ID unik jika ada lebih dari satu elemen -->
+                    <button class="menu" id="toggle-menu">☰</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pupuk</a></li>
+            <li><a href="#">Pot</a></li>
+            <li><a href="Product.html">Product</a></li>
+        </ul>
+    </nav>
+    <!-- Navbar End -->
+    <!-- Content -->
+    <div class="intro">
+        <div class="isi">
+            <p>Transformasi Ruangan Anda,</p>
+            <p> Menuju Kenyamanan dan Keindahan</p>
+            <p>dengan Produk Kami.</p>
+        </div>
+        <div class="learn">
+            <a href="About.html">
+                <p>Pelajari Selengkap nya...</p>
+            </a>
+        </div>
+    </div>
+    <!-- Content End-->
+    <!-- Footer -->
+    <div class="foot">
+        <div class="sosial">
+            <a class="i" href="#"><i data-feather="instagram">
+                </i></a>
+            <a class="f" href="#"><i data-feather="facebook">
+                </i></a>
+            <a class="x" href="#"><i data-feather="twitter">
+                </i></a>
+        </div>
+        <div class="link">
+            <a href="Home.html">Home</a>
+            <a href="About.html">About Us</a>
+            <a href="Product.html">Product</a>
+            <a href="">Katalog</a>
+        </div>
+        <div class="copy">
+            <p> 2024 &copy; Copyright by <a href="#">Lambang</a></p>
+        </div>
+    </div>
+    <!-- Footer End-->
+</body>
+<script src="script.js"></script>
+<script>
+    feather.replace()
+</script>
+
+</html>

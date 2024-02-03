@@ -1,0 +1,24 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+table {
+    margin: 30px auto;
+    border-collapse: collapse; /* Menghilangkan jarak antar border */
+    width: 80%; /* Atur lebar tabel sesuai kebutuhan */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Border rapi untuk setiap sel */
+    padding: 8px; /* Penambahan padding untuk estetika */
+}
+
+th {
+    background-color: #f2f2f2; /* Warna background untuk header */
+    text-align: left; /* Atur posisi teks dalam header */
+}
+
+tr:hover {
+    background-color: #ddd;
+} /* Warna baris ketika di-hover */

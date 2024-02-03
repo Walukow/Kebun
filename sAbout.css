@@ -1,0 +1,100 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.nav {
+    display: flex;
+    background-color: green;
+    padding: 5px;
+    justify-content: center;
+}
+
+.navcon {
+    margin: 5px 25px;
+    padding: 10px;  
+}
+
+.navcon:hover {
+    background-color: gray;
+    border-radius: 5px;  
+}
+
+a {
+    color: white;
+    text-decoration: none; 
+}
+
+.judul {
+    display: flex;
+    margin: 20px auto 50px;
+    justify-content: center;
+}
+
+.img1 {
+    width: 100px;
+    margin: 0 10px 10px;
+    float: left;
+}
+
+.img2 {
+    width: 100%;
+    opacity: 0.8;
+}
+
+.img3 {
+    width: 100px;
+    margin: 0 10px 10px;
+    float: right;
+
+}
+
+.bagian1 {
+    margin: 50px auto;
+}
+
+.bagian2 {
+    margin: 0 0 50px;
+}
+
+.bagian3 {
+    margin: 0 0 50px;
+}
+
+.bagian2 p, .bagian3 p, h3 {
+    margin: 0 0 0 10px;
+}
+
+h3 {
+    display: flex;
+    justify-content: center;
+}
+
+.foot {
+    display: flex;
+    background-color: black;
+    padding: 5px;
+    justify-content: center;
+    color: white;
+}
+
+.foot a {
+    text-decoration: none;
+}
+
+
+
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table; 
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
