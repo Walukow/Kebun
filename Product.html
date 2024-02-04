@@ -11,69 +11,72 @@
 
 <body>
     <!-- Navbar -->
-    <div class="nav">
-        <table>
-            <tr>
-                <td>
-                    <a href="Home.html" class="navcon"><span class="kebun">Kebun</span><span class="ku">Ku</span></a>
-                </td>
-                <td>
-                    <div class="search-bar">
-                        <input type="text" placeholder="Search..." id="search-input">
-                        <button type="submit" id="search-btn">
-                            <i class="feather-icon" data-feather="search"></i>
-                        </button>
-                    </div>
-                </td>
-                <td>
-                    <!-- Pastikan ID unik jika ada lebih dari satu elemen -->
-                    <button class="menu" id="toggle-menu">☰</button>
-                </td>
-            </tr>
-        </table>
+    <div class="nav-container">
+        <div class="nav">
+            <a href="index.html" class="navcon"><span class="kebun">Kebun</span><span class="ku">Ku</span></a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." id="search-input">
+                <button type="submit" id="search-btn">
+                    <i class="feather-icon" data-feather="search"></i>
+                </button>
+            </div>
+            <button class="menu" id="toggle-menu">☰</button>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="Product.html">Bunga</a></li>
+                <li><a href="#">Tanaman</a></li>
+                <li><a href="#">Pot</a></li>
+                <li><a href="#">Pupuk</a></li>
+            </ul>
+        </nav>
     </div>
-    <nav class="navbar">
-        <ul class="nav-list">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Pupuk</a></li>
-            <li><a href="#">Pot</a></li>
-            <li><a href="Product.html">Bunga</a></li>
-        </ul>
-    </nav>
     <!-- Navbar End -->
     <!-- Content -->
     <div class="daftar">
-        <div class="card1">
+        <div class="card">
             <img src="img/Iris.png" alt="">
             <p>Bunga Iris</p>
             <h4>Rp99.999.999.00</h4>
             <p>Terjual= 5</p>
         </div>
-        <div class="card1">
+        <div class="card">
             <img src="img/mawar.png" alt="">
             <p>Bunga Mawar</p>
             <h4>Rp38.999.999.00</h4>
             <p>Terjual 14</p>
         </div>
-        <div class="card1">
+        <div class="card">
             <img src="img/mawar.png" alt="">
             <p>Bunga Mawar</p>
             <h4>Rp49.999.999.00</h4>
             <p>Terjual 14</p>
         </div>
-        <div class="card1">
+        <div class="card">
             <img src="img/matahari.png" alt="">
             <p>Bunga Matahari</p>
             <h4>Rp4.999.999.00</h4>
             <p>Terjual 9</p>
         </div>
-        <div class="card1">
+        <div class="card">
             <img src="img/mawar.png" alt="">
             <p>Bunga mawar</p>
             <h4>Rp49.999.999.00</h4>
             <p>Terjual 14</p>
         </div>
-        <div class="card1">
+        <div class="card">
+            <img src="img/mawar.png" alt="">
+            <p>Bunga mawar</p>
+            <h4>Rp49.999.999.00</h4>
+            <p>Terjual 14</p>
+        </div>
+        <div class="card">
+            <img src="img/mawar.png" alt="">
+            <p>Bunga mawar</p>
+            <h4>Rp49.999.999.00</h4>
+            <p>Terjual 14</p>
+        </div>
+        <div class="card">
             <img src="img/mawar.png" alt="">
             <p>Bunga mawar</p>
             <h4>Rp49.999.999.00</h4>
@@ -92,7 +95,7 @@
                 </i></a>
         </div>
         <div class="link">
-            <a href="Home.html">Home</a>
+            <a href="index.html">Home</a>
             <a href="About.html">About Us</a>
             <a href="Product.html">Product</a>
             <a href="">Katalog</a>
