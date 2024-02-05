@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .container {
+            position: relative;
+            overflow: hidden;
+            right: 0px;
+            animation: geser 2s;
+        }
+        
+        @keyframes geser {
+            0% {
+                right: 60px;
+                opacity: 0;
+            }
+            100%{
+                right 0;
+            }
+        }
+        .item {
+            width: 200px;
+            height: 200px;
+            align-self: flex-end;
+            background-color: salmon;
+            animation:  2s ease 3 forwards;
+        }
+
+    </style>
+</head>
+<body>
+    <div><hr></div>
+    <table class="container">
+        <tr>
+            <td>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vero, saepe soluta dolor inventore corporis eligendi labore. Deserunt, ipsum repellat.
+            </td>
+            <td>
+                <img src="img/profil-wa-kosong-28.jpg" alt="">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -21,6 +21,12 @@ img {
     width: 100%;
     border-radius: 5px;
 }
+
+hr {
+    height: 2px;
+    margin: 60px 15px 10px;
+    background-color: #29D655;
+}
 /* Tag End */
 
 
@@ -148,9 +154,22 @@ img {
 
 
 /* Content */
-.img {
-    width: 100%;
-    opacity: 0.8;
+.animation {
+    position: relative;
+    top: 30px;
+    animation: keren 2s;
+    -webkit-animation: keren 2s;
+}
+
+@keyframes keren {
+    0% {
+        top: 0;
+        opacity: 0;
+    }
+    100% {
+        top: 30px;
+        opacity: 1;
+    }
 }
 
 .intro {
@@ -158,7 +177,6 @@ img {
     background-image: url(img/latar5.png);
     background-repeat: no-repeat;
     background-size: auto;
-    margin: 50px 0 0;
     height: 800px;
     color: white;
     text-align: center;
@@ -208,6 +226,68 @@ img {
     }
 }
 
+.konten {
+    background-color: #dbdee3;
+    padding: 50px 0 40px;
+}
+
+.judul {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: lighter;
+    margin: 0 0 20px;
+}
+
+/* Menghilangkan animasi awal pada .newproduk untuk menggunakan Intersection Observer */
+.newproduk {
+    opacity: 0;
+    /*Startinvisible*/transition: all 2s;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
+}
+
+.container1 {
+    font-size: smaller;
+    font-weight: lighter;
+    margin: 0 0 40px;
+}
+
+.card1, .card2 {
+    width: 125px;
+    padding: 10px;
+}
+
+.card1 {
+    float: right;
+}
+
+.card2 {
+    float: left;
+}
+
+.text1 {
+    padding: 10px;
+    text-align: end;
+}
+
+.text2 {
+    padding: 10px;
+    text-align: start;
+}
+
+/* Animation when element is visible */
+.animasiAktif {
+    opacity: 1;
+    transform: translateY(-30px); /* Adjust if necessary */
+}
+
+.ke1 {
+    left: 70px;
+}
+
 .highlight {
     margin: 5px 0 0 0;
 }
@@ -223,15 +303,10 @@ img {
     justify-content: center;
 }
 
-.container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
 
 .card {
     background-color: #8FBD88;
-    width: 45%;
+    width: 100%;
     text-align: start;
     font-size: smaller;
     border-radius: 5px;
@@ -261,7 +336,6 @@ img {
 /* Footer */
 .foot {
     display: flex;
-    margin: 30px 0 0;
     background-color:green;
     padding: 5px;
     justify-content: center;
