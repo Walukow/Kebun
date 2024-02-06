@@ -7,50 +7,124 @@
     <style>
         body {
             margin: 0;
-            display: flex;
         }
 
         img {
             width: 100%;
         }
 
-        .container {
-            position: relative;
-            overflow: hidden;
-            right: 0px;
-            animation: geser 2s;
-        }
-        
-        @keyframes geser {
-            0% {
-                right: 60px;
-                opacity: 0;
-            }
-            100%{
-                right 0;
-            }
-        }
-        .item {
-            width: 200px;
-            height: 200px;
-            align-self: flex-end;
-            background-color: salmon;
-            animation:  2s ease 3 forwards;
-        }
+
+        .newproduk {
+    margin-top: 100px;
+    position: relative;
+    bottom: 30px;
+    opacity: 0;
+    animation: ataskanan 3s forwards;
+    -webkit-animation: ataskanan 3s forwards;
+}
+
+@keyframes ataskanan {
+    0% {
+        bottom: 0;
+        opacity: 0;
+    }
+    100% {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+.container1 {
+    font-size: smaller;
+    font-weight: lighter;
+    opacity: 0;
+    margin: 0 0 40px;
+    animation: kirikanan 3s forwards;
+}
+
+.container2 {
+    font-size: smaller;
+    font-weight: lighter;
+    opacity: 0;
+    margin: 0 0 40px;
+    animation: kanankiri 3s forwards;
+}
+
+@keyframes kirikanan {
+    from {
+        opacity: 0;
+        margin-right: 120px;
+    }
+    to {
+        opacity: 1;
+        margin-right: 0;
+    }
+}
+@keyframes kanankiri {
+    from {
+        opacity: 0;
+        margin-left: 120px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0;
+    }
+}
+
+.card1, .card2 {
+    width: 125px;
+    padding: 10px;
+}
+
+.card1 {
+    float: right;
+}
+
+.card2 {
+    float: left;
+}
+
+.text1 {
+    padding: 10px;
+    text-align: end;
+}
+
+.text2 {
+    padding: 10px;
+    text-align: start;
+}
+
+
 
     </style>
 </head>
-<body>
-    <div><hr></div>
-    <table class="container">
-        <tr>
-            <td>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique vero, saepe soluta dolor inventore corporis eligendi labore. Deserunt, ipsum repellat.
-            </td>
-            <td>
-                <img src="img/profil-wa-kosong-28.jpg" alt="">
-            </td>
-        </tr>
-    </table>
+<body>    
+    <div class="konten">
+    <div class="newproduk">
+        <div class="judul">
+            <p>Produk Baru</p>
+        </div>
+        <div class="container1">
+            <div class="card1 cf">
+                <img src="img/matahari1x1.png" alt="">
+            </div>
+            <div class="text1">
+                <p>Bunga Matahari</p>
+                <h4>Rp4.999.999,00</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error?</p>
+            </div>
+        </div>
+        <div class="container2">
+            <div class="card2 cf">
+                <img src="img/mawar1x1.png" alt="">
+            </div>
+            <div class="text2">
+                <p>Bunga Mawar</p>
+                <h4>Rp9.999.999,00</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error?</p>
+            </div>
+        </div>
+        <hr>
+    </
 </body>
 </html>

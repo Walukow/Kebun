@@ -8,46 +8,85 @@
         <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
     <link rel="stylesheet" href="sAbout.css">
 </head>
-
-<body class="about">
+<body>
     <!-- Navbar -->
-    <div class="nav">
-        <a href="index.html" class="navcon"><</a>
+    <div class="nav-container">
+        <div class="nav">
+            <a href="index.html" class="navcon"><span class="kebun">Kebun</span><span class="ku">Ku</span></a>
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." id="search-input">
+                <button type="submit" id="search-btn">
+                    <i class="feather-icon" data-feather="search"></i>
+                </button>
+            </div>
+            <button class="menu" id="toggle-menu">☰</button>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="Product.html">Bunga</a></li>
+                <li><a href="coba.html">Tanaman</a></li>
+                <li><a href="#">Pot</a></li>
+                <li><a href="#">Pupuk</a></li>
+            </ul>
+        </nav>
     </div>
     <!-- Navbar End -->
     <!-- Content -->
-    <div class="judul">
-        <h1>Lorem, ipsum dolor.</h1>
+    <div class="intro">
+        <div class="kirikanan">
+            <div class="container">
+                <div class="img1 cf">
+                    <img src="img/profil-wa-kosong-28.jpg" alt="">
+                </div>
+                <div class="text1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error?</p>
+                </div>
+            </div>
+        </div>
+        <div class="kanankiri">
+            <div class="container">
+                <div class="img2 cf">
+                    <img src="img/profil-wa-kosong-28.jpg" alt="">
+                </div>
+                <div class="text2">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error?</p>
+                </div>
+            </div>
+        </div>
+        <div class="jarak"></div>
+        <div class="bawahatas">
+            <p class="judul">lorem</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum, aut maiores. Exercitationem enim soluta quia molestias iusto dolor aperiam perferendis?</p>
+        </div>
     </div>
-
-    <div class="bagian1">
-        <h3>Lorem</h3>
-        <img src="img/profil-wa-kosong-28.jpg" class="img1 cf" alt="">
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui itaque exercitationem quia delectus,
-            reprehenderit corporis atque rerum, ut beatae rem animi earum quasi et natus, doloremque eos. Maiores,
-            laborum eos? </p>
+    <div class="konten">
+        <div class="newproduk">
+            <div class="judul">
+                <p>Lorem  </p>
+            </div>
+            <div class="container1">
+                <div class="card1 cf">
+                    <img src="img/profil-wa-kosong-28.jpg" alt="">
+                </div>
+                <div class="text1">
+                    <h4>Ipsum</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error?</p>
+                </div>
+            </div>
+            <hr>
+            <div class="container1">
+                <div class="card2 cf">
+                    <img src="img/profil-wa-kosong-28.jpg" alt="">
+                </div>
+                <div class="text2">
+                    <h4>Dolor</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, error?</p>
+                </div>
+            </div>
+            <hr>
+        </div>
     </div>
-    <img src="img/latar.png" class="img2" alt="">
-
-    <div class="bagian2">
-        
-        <h3>Lorem, ipsum.</h3>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa dolor veritatis ipsum dolorum rem atque
-            doloremque delectus incidunt debitis. Sequi quaerat possimus delectus illo distinctio fuga eos ullam
-            sapiente facere excepturi sint, quam adipisci, animi quidem officia dolor, tenetur minus eum quo libero
-            harum totam facilis? Esse veritatis officia quia!</p>
-    </div>
-    <div class="bagian3">
-        <h3>Lorem ipsum</h3>
-        <img src="img/profil-wa-kosong-28.jpg" class="img3 cf" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum fugiat aliquam animi atque porro voluptatum ad
-            qui magnam molestiae quis explicabo ullam, voluptates sequi vitae. Id delectus eveniet quisquam fugit
-            cupiditate porro quaerat, provident distinctio ea sed ipsam repellat optio sit? Porro ducimus expedita
-            voluptatum. Sequi tempore ipsam non earum, optio voluptates harum blanditiis quibusdam. Delectus nesciunt
-            veniam natus nisi fugit exercitationem, cum asperiores dicta molestiae ex ullam consequuntur enim, ab
-            possimus, harum repellendus! Consequuntur eius consequatur laudantium sunt. Sint?</p>
-    </div>
-    <!-- Content End -->
+    <!-- Content End-->
     <!-- Footer -->
     <div class="foot">
         <div class="sosial">
@@ -70,6 +109,7 @@
     </div>
     <!-- Footer End-->
 </body>
+<script src="script.js"></script>
 <script>
     feather.replace()
 </script>

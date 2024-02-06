@@ -1,73 +1,271 @@
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'OpenSans';
+}
+
+body {
     margin: 0;
 }
 
-.nav {
+img{
     width: 100%;
-    background-color: green;
-    position: fixed;
-    box-shadow: 0 2px 10px #333;
 }
 
-.navcon {
-    font-size: xx-large;
-    font-weight: lighter;
-    padding: 5px;  
+@font-face {
+    font-family: 'OpenSans';
+    src: url('font/OpenSans-Regular.ttf') format('truetype');
+    font-style: normal;
 }
 
 a {
+    text-decoration: none;
     color: white;
-    text-decoration: none; 
 }
 
-.judul {
-    padding: 50px 0;
+
+
+/* Navbar */
+.nav-container {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: green;
+    box-sizing: border-box;
+    box-shadow: 2px 0 10px #333;
+}
+
+.nav {
     display: flex;
-    justify-content: center;
+    align-items: center; 
+    justify-content: space-around;
+    padding: 10px 2%; 
+    margin: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.nav .kebun {
+    color: #29D655; /* Diubah untuk kontras yang lebih baik dengan latar belakang */
+    font-style: italic;
+    font-size: 130%;
+    font-weight: bolder;
+    text-shadow: 0 2px 1px #333;
+}
+
+.nav .ku {
+    color:  #D65529; /* Diubah untuk kontras yang lebih baik dengan latar belakang */
+    font-style: italic;
+    font-size: 130%;
+    font-weight: bolder;
+    text-shadow: 0 2px 1px #333;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 25px; 
+    overflow: hidden; 
+    width: 50%; 
+    min-width: 200px;
+    box-sizing: border-box; 
+    justify-content: space-between;
+}
+
+#search-input, #search-btn {
+    border: none;
+    outline: none; 
+}
+
+#search-input {
+    padding: 0 0 0 3px;
+}
+
+#search-btn {
+    padding: 0 10px 0 0;
+    background: white;
+    cursor: pointer;
+}
+
+.menu {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0 10px;
+}
+
+.navbar {
+    max-height: 0;
+    width: 100%;
+    background-color: green;
+    box-sizing: border-box;
+    overflow: hidden;
+    transition: max-height 1s ease-in;
+    -webkit-transition: max-height 1s ease-in;
+    -moz-transition: max-height 1s ease-in;
+    -ms-transition: max-height 1s ease-in;
+    -o-transition: max-height 1s ease-in;
+}
+
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Ganti dengan row untuk horizontal */
+}
+
+.nav-list li a {
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    color: white; /* Membuat link terlihat */
+    text-align: center;
+}
+/* Navbar End*/
+
+/* Content */
+@keyframes kirikanan {
+    from{
+        padding-right: 50px;
+    }
+    to{
+        opacity: 1;
+        padding-right: 0;
+    }
+}
+@keyframes kanankiri {
+    from{
+        padding-left: 50px;
+    }
+    to{
+        opacity: 1;
+        padding-left: 0;
+    }
+}
+
+@keyframes bawahatas {
+    from {
+        padding-top: 30px;
+    }
+    to {
+        opacity: 1;
+        padding-top: 0;
+    }
+}
+
+.intro {
+    margin: -20px 0 0 ;
+    width: 100%;
+    background-image: url(img/latar4.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 900px;
+    color: white;
+    text-align: center;
+    font-weight: lighter;
+}
+
+.kirikanan {
+    opacity: 0;
+    animation: kirikanan 2s forwards;
+    -webkit-animation: kirikanan 2s forwards;
+}
+
+.kanankiri {
+    opacity: 0;
+    animation: kanankiri 2s forwards;
+    -webkit-animation: kanankiri 2s forwards;
+}
+
+.bawahatas {
+    opacity: 0;
+    animation: bawahatas 2s forwards;
+    -webkit-animation: bawahatas 2s forwards;
+}
+
+.container {
+    padding: 90px 0 0;
+}
+
+.jarak {
+    padding: 30px;
 }
 
 .img1 {
-    width: 100px;
-    margin: 0 10px 10px;
+    float: right;
+    margin: 10px;
+    width: 80px;
+}
+.img2 {
+    float: left;
+    margin: 10px;
+    width: 80px;
+}
+
+.isi {
+    padding: 150px 0 100px;
+}
+
+.konten {
+    background-color: #dbdee3;
+    padding: 50px 0 40px;
+}
+
+.judul {
+    text-align: center;
+    font-size: xx-large;
+    font-weight: lighter;
+    margin: 0 auto 20px;
+}
+
+/* Menghilangkan animasi awal pada .newproduk untuk menggunakan Intersection Observer */
+.newproduk {
+    opacity: 0;
+    /*Startinvisible*/transition: all 2s;
+    -webkit-transition: all 3s;
+    -moz-transition: all 3s;
+    -ms-transition: all 3s;
+    -o-transition: all 3s;
+}
+
+.card1, .card2 {
+    width: 125px;
+    padding: 10px;
+}
+
+.card1 {
+    float: right;
+}
+
+.card2 {
     float: left;
 }
 
-.img2 {
-    width: 100%;
+.text1 {
+    margin: 20x;
+    text-align: end;
 }
 
-.img3 {
-    width: 100px;
-    margin: 0 10px 10px;
-    float: right;
-
+.text2 {
+    text-align: start;
 }
 
-.bagian1 {
-    margin: 50px auto;
+/* Animation when element is visible */
+.animasiAktif {
+    opacity: 1;
+    transform: translateY(-30px); /* Adjust if necessary */
 }
 
-.bagian2 {
-    margin: 0 0 50px;
-}
+/* Content End*/
 
-.bagian3 {
-    margin: 0 0 50px;
-}
-
-.bagian2 p, .bagian3 p, h3 {
-    margin: 0 0 0 10px;
-}
-
-h3 {
-    display: flex;
-    justify-content: center;
-}
-
+/* Footer */
 .foot {
     display: flex;
-    margin: 30px 0 0;
     background-color:green;
     padding: 5px;
     justify-content: center;
@@ -107,6 +305,22 @@ margin: 2% 3%;
 .foot a {
     text-decoration: none;
 }
+/* Footer End*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

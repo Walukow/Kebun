@@ -243,10 +243,6 @@ hr {
 .newproduk {
     opacity: 0;
     /*Startinvisible*/transition: all 2s;
-    -webkit-transition: all 3s;
-    -moz-transition: all 3s;
-    -ms-transition: all 3s;
-    -o-transition: all 3s;
 }
 
 .container1 {
