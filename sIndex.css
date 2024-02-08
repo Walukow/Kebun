@@ -239,10 +239,14 @@ hr {
     margin: 0 0 20px;
 }
 
-/* Menghilangkan animasi awal pada .newproduk untuk menggunakan Intersection Observer */
+
 .newproduk {
     opacity: 0;
-    /*Startinvisible*/transition: all 2s;
+    transition: all 1s;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -ms-transition: all 1s;
+    -o-transition: all 1s;
 }
 
 .container1 {
@@ -274,10 +278,9 @@ hr {
     text-align: start;
 }
 
-/* Animation when element is visible */
 .animasiAktif {
     opacity: 1;
-    transform: translateY(-30px); /* Adjust if necessary */
+    transform: translateY(-30px);/
 }
 
 .ke1 {

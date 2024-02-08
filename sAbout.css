@@ -28,7 +28,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1000;
+    z-index: 2;
     background-color: green;
     box-sizing: border-box;
     box-shadow: 2px 0 10px #333;
@@ -131,20 +131,20 @@ a {
 /* Content */
 @keyframes kirikanan {
     from{
-        padding-right: 50px;
+        right: 50px;
     }
     to{
         opacity: 1;
-        padding-right: 0;
+        right: 0;
     }
 }
 @keyframes kanankiri {
     from{
-        padding-left: 50px;
+        left: 50px;
     }
     to{
         opacity: 1;
-        padding-left: 0;
+        left: 0;
     }
 }
 
@@ -171,13 +171,16 @@ a {
 }
 
 .kirikanan {
+    position: relative;
     opacity: 0;
     animation: kirikanan 2s forwards;
     -webkit-animation: kirikanan 2s forwards;
 }
 
 .kanankiri {
+    position: relative;
     opacity: 0;
+    overflow: hidden;
     animation: kanankiri 2s forwards;
     -webkit-animation: kanankiri 2s forwards;
 }
@@ -223,14 +226,10 @@ a {
     margin: 0 auto 20px;
 }
 
-/* Menghilangkan animasi awal pada .newproduk untuk menggunakan Intersection Observer */
+
 .newproduk {
     opacity: 0;
-    /*Startinvisible*/transition: all 2s;
-    -webkit-transition: all 3s;
-    -moz-transition: all 3s;
-    -ms-transition: all 3s;
-    -o-transition: all 3s;
+    transition: all 1s;
 }
 
 .card1, .card2 {
@@ -247,18 +246,18 @@ a {
 }
 
 .text1 {
-    margin: 20x;
+    margin-left: 50px;
     text-align: end;
 }
 
 .text2 {
-    text-align: start;
+    text-align: left;
 }
 
-/* Animation when element is visible */
+
 .animasiAktif {
     opacity: 1;
-    transform: translateY(-30px); /* Adjust if necessary */
+    transform: translateY(-30px);
 }
 
 /* Content End*/

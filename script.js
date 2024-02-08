@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }, {
-        threshold: 0.3 // Adjust based on when you want the animation to start
+        threshold: 0.25 // Adjust based on when you want the animation to start
     });
 
     // Observe all elements with the class 'newproduk'

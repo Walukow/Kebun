@@ -37,6 +37,7 @@
 .container1 {
     font-size: smaller;
     font-weight: lighter;
+    position: relative;
     opacity: 0;
     margin: 0 0 40px;
     animation: kirikanan 3s forwards;
@@ -45,6 +46,7 @@
 .container2 {
     font-size: smaller;
     font-weight: lighter;
+    position: relative;
     opacity: 0;
     margin: 0 0 40px;
     animation: kanankiri 3s forwards;
@@ -53,21 +55,21 @@
 @keyframes kirikanan {
     from {
         opacity: 0;
-        margin-right: 120px;
+        right: 120px;
     }
     to {
         opacity: 1;
-        margin-right: 0;
+        right: 0;
     }
 }
 @keyframes kanankiri {
     from {
         opacity: 0;
-        margin-left: 120px;
+        left: 120px;
     }
     to {
         opacity: 1;
-        margin-left: 0;
+        left: 0;
     }
 }
 
